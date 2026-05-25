@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MLA POS — Descarga</title>
+    <meta
+      name="description"
+      content="Descargá MLA POS para Windows. App de punto de venta con Electron y SQLite, offline y minimalista."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="topbar reveal">
+      <span class="brand">MLA POS</span>
+      <nav class="topnav">
+        <a href="#instalacion">Instalación</a>
+        <a href="#seguridad">Seguridad</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="hero reveal">
+        <p class="eyebrow">PUNTO DE VENTA · ELECTRON · SQLITE</p>
+        <h1>Vendé más rápido, sin depender de internet.</h1>
+        <p class="subtitle">
+          MLA POS es una app de escritorio para tu negocio. Los datos quedan en
+          tu PC con SQLite una base de datos local.
+        </p>
+
+        <div class="cta-row">
+          <a
+            class="download-btn is-loading"
+            href="#"
+            id="downloadBtn"
+            aria-label="Descargar MLA POS"
+            aria-disabled="true"
+          >
+            <span class="btn-label">Descargar para Windows</span>
+          </a>
+          <span class="build-chip" id="buildChip">Cargando versión...</span>
+        </div>
+
+        <p class="hero-note">
+          La descarga usa el último release publicado en GitHub. Solo necesitas
+          Windows 10 u 11.
+        </p>
+      </section>
+
+      <section class="features">
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">01</span>
+          <h2>Offline primero</h2>
+          <p>
+            Ventas y catálogo en SQLite local. Si se corta internet, seguís
+            operando.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">02</span>
+          <h2>Rápida y liviana</h2>
+          <p>
+            Electron con interfaz clara. Pensada para el mostrador, no para
+            configurar servidores.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">03</span>
+          <h2>Siempre actualizada</h2>
+          <p>
+            Cada release en GitHub trae el instalador nuevo. Esta página lo
+            detecta automáticamente.
+          </p>
+        </article>
+      </section>
+
+      <section class="section-block reveal" id="instalacion">
+        <div class="section-head">
+          <p class="section-label">Paso a paso</p>
+          <h2>Como instalar MLA POS en Windows</h2>
+          <p class="section-intro">
+            El proceso tarda menos de dos minutos. Sigue estos pasos en orden.
+          </p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">1</span>
+            <div class="step-body">
+              <h3>Descargá el instalador</h3>
+              <p>
+                Tocá el botón <strong>Descargar para Windows</strong> arriba. Se
+                bajará el archivo <code>MLA-POS-Setup.exe</code> desde GitHub.
+              </p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <span class="step-num">2</span>
+            <div class="step-body">
+              <h3>Abre el archivo descargado</h3>
+              <p>
+                Anda a la carpeta <strong>Descargas</strong> y hace doble clic
+                en el instalador. Si Windows pregunta, elige permitir la
+                ejecución.
+              </p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <span class="step-num">3</span>
+            <div class="step-body">
+              <h3>Si aparece “Windows protegió tu PC”</h3>
+              <p>
+                Es normal en apps sin firma comercial. Clic en
+                <strong>Más información</strong> y después en
+                <strong>Ejecutar de todas formas</strong>. No significa que la
+                app tenga virus.
+              </p>
+              <div class="smartscreen-mock" aria-hidden="true">
+                <p class="mock-title">Windows protegió tu PC</p>
+                <p class="mock-text">Editor desconocido</p>
+                <span class="mock-link">Más información</span>
+                <span class="mock-btn">Ejecutar de todas formas</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <span class="step-num">4</span>
+            <div class="step-body">
+              <h3>Completa el asistente</h3>
+              <p>
+                Siguiente → elige carpeta (o deja la predeterminada) →
+                Instalar. Al finalizar, marca abrir la app si quieres probarla al
+                instante.
+              </p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <span class="step-num">5</span>
+            <div class="step-body">
+              <h3>Listo: abre la app MLA POS</h3>
+              <p>
+                Busca el acceso directo en el escritorio o en el menú Inicio.
+                La primera vez puede tardar unos segundos en cargar la base
+                local.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section-block trust reveal" id="seguridad">
+        <div class="section-head">
+          <p class="section-label">¿Por qué Windows la marca como no confiable?</p>
+          <h2>Editor desconocido ≠ app peligrosa</h2>
+        </div>
+
+        <div class="trust-grid">
+          <article class="trust-card">
+            <h3>Qué te muestra Windows</h3>
+            <p>
+              SmartScreen avisa cuando el instalador
+              <strong>no tiene certificado de firma de código</strong> emitido por
+              un editor reconocido (Microsoft, Adobe, etc.). Por eso dice
+              “editor desconocido” o que la app “no es confiable”.
+            </p>
+          </article>
+
+          <article class="trust-card">
+            <h3>Por qué pasa con MLA POS</h3>
+            <p>
+              MLA POS se distribuye directo desde GitHub, sin pasar por una
+              tienda oficial. Los certificados de firma cuestan cientos de
+              dólares al año; muchas apps independientes —como esta— se publican
+              <strong>sin firmar</strong> hasta tener ese presupuesto.
+            </p>
+          </article>
+
+          <article class="trust-card trust-card--wide">
+            <h3>¿Es seguro instalarla?</h3>
+            <p>
+              Sí, siempre que descargues desde este sitio o desde el release
+              oficial en
+              <a
+                id="releasesLink"
+                href="https://github.com/MLA-ex3tav/MLAapp/releases"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub Releases</a
+              >. El código fuente y cada versión quedan públicos en el
+              repositorio. Windows solo no puede verificar automáticamente quién
+              la publicó; vos confirmás la instalación con “Ejecutar de todas
+              formas”.
+            </p>
+            <ul class="trust-list">
+              <li>Descargá solo desde el botón de esta página o GitHub Releases.</li>
+              <li>No uses instaladores que te manden por WhatsApp o enlaces raros.</li>
+              <li>En el futuro podemos agregar firma de código para quitar el aviso.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer reveal">
+        <p>
+          MLA POS · Electron + SQLite ·
+          <a
+            id="footerReleasesLink"
+            href="https://github.com/MLA-ex3tav/MLAapp/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver todas las versiones</a
+          >
+        </p>
+      </footer>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
